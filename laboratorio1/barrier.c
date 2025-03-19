@@ -53,9 +53,9 @@ void *thread_function(void *arg)
     unsigned int res = pthread_my_barrier_wait(&barrier);
 
     if (res == 1)
-        printf("Thread %d: sono l'ultimo, sveglio gli altri!\n", id);
+        printf("Thread %d: sono l'ultimo, sveglio gli altri\n", id);
     else
-        printf("Thread %d: sono stato svegliato!\n", id);
+        printf("Thread %d: sono stato svegliato\n", id);
 
     return NULL;
 }
